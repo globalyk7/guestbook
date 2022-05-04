@@ -32,7 +32,7 @@ pipeline {
         stage('Docker Image Push') {
             steps {
                 script {
-                    docker.withRegistry('', 'DockerHub_yu3papa') {
+                    docker.withRegistry('', 'DockerHub_globalyk') {
                         oDockImage.push()
                     }
                 }
